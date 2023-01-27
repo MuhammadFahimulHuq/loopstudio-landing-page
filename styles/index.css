@@ -16,7 +16,7 @@ body {
 }
 body h1 {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 4.2rem;
+  font-size: clamp(4.2rem, 5vw, 6.4rem);
   font-weight: 200;
   text-transform: uppercase;
 }
@@ -25,24 +25,24 @@ body nav {
 }
 
 #hero-image {
-  background-image: url("../images/mobile/image-hero.jpg");
-  width: 720px;
+  width: 100%;
   min-height: 700px;
   max-height: 1300px;
   position: absolute;
   top: 0;
   z-index: -1;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-title {
   color: hsl(0deg, 0%, 100%);
-  width: 400px;
+  width: 40%;
   border: 1px solid hsl(0deg, 0%, 100%);
   padding: 3rem;
   margin-top: 15rem;
   margin-bottom: 35rem;
-  margin-left: auto;
-  margin-right: auto;
   letter-spacing: 0.3rem;
   text-align: left;
 }
@@ -53,24 +53,19 @@ body nav {
 
 #vr-image {
   background-image: url("../images/mobile/image-interactive.jpg");
-  width: 90%;
-  min-height: 40vh;
+  width: 100%;
+  min-height: 70vh;
   background-repeat: no-repeat;
-  margin: 5rem auto;
 }
 
 .title {
   font-weight: 200;
-  text-align: center;
-  margin: auto;
 }
 
 .subtitle {
-  text-align: center;
-  margin: 1rem auto;
+  text-align: left;
   line-height: 3rem;
   color: hsl(0deg, 0%, 55%);
-  width: 70%;
 }
 
 .creation-image {
@@ -92,7 +87,7 @@ body nav {
 
 .img-title {
   color: hsl(0deg, 0%, 100%);
-  width: 50%;
+  width: 60%;
   margin-top: 8rem;
   margin-left: 3rem;
 }
@@ -161,6 +156,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   padding: 5rem 0rem;
+  bottom: 0;
 }
 footer a {
   text-decoration: none;
@@ -184,4 +180,132 @@ footer p {
 }
 .social-container a {
   margin: 0 0.5rem;
+}
+
+@media (max-width: 769px) {
+  #hero-image {
+    background-image: url("../images/mobile/image-hero.jpg");
+  }
+  .hero-title {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 769px) {
+  main {
+    margin: 5rem 10rem;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  nav .nav-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 3rem;
+  }
+  nav .nav-container a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    position: relative;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  nav .nav-container a::after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 3px;
+    background-color: hsl(0deg, 0%, 100%);
+    transition: width 2ms linear;
+    margin: 0.5rem auto;
+  }
+  nav .nav-container a:hover::after {
+    width: 10px;
+  }
+  #hero-image {
+    background-image: url("/images/desktop/image-hero.jpg");
+  }
+  .hero-title {
+    margin-left: 2rem;
+  }
+  #vr-image {
+    background-image: url("/images//desktop/image-interactive.jpg");
+  }
+  .vr-text-container {
+    width: 50%;
+    position: absolute;
+    top: 1000px;
+    background-color: white;
+    right: 300px;
+    padding: 10rem;
+    text-align: left;
+  }
+  .img-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .creation-image {
+    height: 650px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .img-title {
+    margin-top: 45rem;
+    width: 90%;
+  }
+  #deep-earth-img {
+    background-image: linear-gradient(to bottom, rgba(110, 110, 110, 0.075), rgba(0, 0, 0, 0.73)), url("/images/desktop/image-deep-earth.jpg");
+  }
+  #night-arcade-img {
+    background-image: linear-gradient(to bottom, rgba(110, 110, 110, 0.075), rgba(0, 0, 0, 0.73)), url("/images/desktop//image-night-arcade.jpg");
+  }
+  #soccer-team-vr-img {
+    background-image: linear-gradient(to bottom, rgba(110, 110, 110, 0.075), rgba(0, 0, 0, 0.73)), url("/images/desktop/image-soccer-team.jpg");
+  }
+  #the-grid-img {
+    background-image: linear-gradient(to bottom, rgba(110, 110, 110, 0.075), rgba(0, 0, 0, 0.73)), url("/images/desktop/image-grid.jpg");
+  }
+  #the-grid-img .img-title {
+    width: 30%;
+  }
+  #from-up-above-vr-img {
+    background-image: linear-gradient(to bottom, rgba(110, 110, 110, 0.075), rgba(0, 0, 0, 0.73)), url("/images/desktop/image-from-above.jpg");
+  }
+  #pocket-borealis-img {
+    background-image: linear-gradient(to bottom, rgba(110, 110, 110, 0.075), rgba(0, 0, 0, 0.73)), url("/images/desktop/image-pocket-borealis.jpg");
+  }
+  #the-curiosity-img {
+    background-image: linear-gradient(to bottom, rgba(110, 110, 110, 0.075), rgba(0, 0, 0, 0.73)), url("/images/desktop/image-curiosity.jpg");
+  }
+  #make-it-fisheye-img {
+    background-image: linear-gradient(to bottom, rgba(110, 110, 110, 0.075), rgba(0, 0, 0, 0.73)), url("/images/desktop/image-fisheye.jpg");
+  }
+  .footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 6rem;
+  }
+  .footer-wrapper .logo {
+    margin: 0rem 0rem;
+  }
+  .footer-wrapper .social-container {
+    margin: 0rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .right-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .footer-nav-wrapper {
+    margin-top: 1rem;
+  }
+  .footer-nav-wrapper a {
+    margin-right: 1rem;
+  }
 }/*# sourceMappingURL=index.css.map */
