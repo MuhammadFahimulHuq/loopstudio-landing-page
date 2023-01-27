@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Alata", sans-serif;
+  font-size: 15px;
+}
+body h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 4.2rem;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+body nav {
+  margin: 3rem 2rem;
+}
+
+#hero-image {
+  background-image: url("../images/mobile/image-hero.jpg");
+  width: 720px;
+  min-height: 700px;
+  max-height: 1300px;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.hero-title {
+  color: hsl(0deg, 0%, 100%);
+  width: 400px;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  padding: 3rem;
+  margin-top: 15rem;
+  margin-bottom: 35rem;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 0.3rem;
+  text-align: left;
+}
+
+.vr-container {
+  margin-top: 10rem;
+}
+
+#vr-image {
+  background-image: url("../images/mobile/image-interactive.jpg");
+  width: 90%;
+  min-height: 40vh;
+  background-repeat: no-repeat;
+  margin: 5rem auto;
+}
+
+.title {
+  font-weight: 200;
+  text-align: center;
+  margin: auto;
+}
+
+.subtitle {
+  text-align: center;
+  margin: 1rem auto;
+  line-height: 3rem;
+  color: hsl(0deg, 0%, 55%);
+  width: 70%;
+}
+
+.creation-image {
+  width: 90%;
+  min-height: 200px;
+  margin: auto;
+}
+
+.creation-container {
+  margin-top: 10rem;
+}
+
+.img-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin: 5rem 0rem;
+}
+
+.img-title {
+  color: hsl(0deg, 0%, 100%);
+  width: 50%;
+  margin-top: 8rem;
+  margin-left: 3rem;
+}
+
+#deep-earth-img {
+  background-image: linear-gradient(to left, rgba(110, 110, 110, 0.075), rgba(0, 0, 0, 0.73)), url("/images/mobile/image-deep-earth.jpg");
+}
+
+#night-arcade-img {
+  background-image: linear-gradient(to left, rgba(110, 110, 110, 0.075), rgba(0, 0, 0, 0.73)), url("/images/mobile/image-night-arcade.jpg");
+}
+
+#soccer-team-vr-img {
+  background-image: linear-gradient(to left, rgba(110, 110, 110, 0.075), rgba(0, 0, 0, 0.73)), url("/images/mobile/image-soccer-team.jpg");
+}
+
+#the-grid-img {
+  background-image: linear-gradient(to left, rgba(110, 110, 110, 0.075), rgba(0, 0, 0, 0.73)), url("/images/mobile/image-grid.jpg");
+}
+#the-grid-img .img-title {
+  width: 30%;
+}
+
+#from-up-above-vr-img {
+  background-image: linear-gradient(to left, rgba(110, 110, 110, 0.075), rgba(0, 0, 0, 0.73)), url("/images/mobile/image-from-above.jpg");
+}
+
+#pocket-borealis-img {
+  background-image: linear-gradient(to left, rgba(110, 110, 110, 0.075), rgba(0, 0, 0, 0.73)), url("/images/mobile/image-pocket-borealis.jpg");
+}
+
+#the-curiosity-img {
+  background-image: linear-gradient(to left, rgba(110, 110, 110, 0.075), rgba(0, 0, 0, 0.73)), url("/images/mobile/image-curiosity.jpg");
+}
+
+#make-it-fisheye-img {
+  background-image: linear-gradient(to left, rgba(110, 110, 110, 0.075), rgba(0, 0, 0, 0.73)), url("/images/mobile/image-fisheye.jpg");
+}
+
+.button-container {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+.button {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: hsl(0deg, 0%, 0%);
+  padding: 1rem 3rem;
+  border: 2px solid hsl(0deg, 0%, 0%);
+  letter-spacing: 0.8rem;
+}
+.button:hover {
+  background-color: hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 100%);
+}
+
+footer {
+  margin-top: 10rem;
+  background-color: hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 100%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem 0rem;
+}
+footer a {
+  text-decoration: none;
+  color: hsl(0deg, 0%, 100%);
+  margin: 1rem 0rem;
+}
+footer p {
+  margin-top: 1rem;
+  color: hsl(0deg, 0%, 55%);
+}
+
+.logo {
+  background-image: url("/images/logo.svg");
+  width: 192px;
+  height: 32px;
+  margin: 2rem auto;
+}
+
+.social-container {
+  margin-top: 3rem;
+}
+.social-container a {
+  margin: 0 0.5rem;
+}/*# sourceMappingURL=index.css.map */
